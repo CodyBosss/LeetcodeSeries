@@ -7,6 +7,7 @@ public class ReverseIntegerForAllCases {
 	}
 	public static int reverseInteger(int num) {
 		int rev = 0, rem;
+		System.out.println(0%3);
 		while(num!=0) {
 			rem = num%10;
 			num=num/10;
