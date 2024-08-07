@@ -10,13 +10,11 @@ public class MakeAllMinimumOperationsDivisibleByThree {
 		for(int i=0; i<nums.length; i++) {			
 			if(nums[i]%3==1) {
 				if((nums[i]-1)%3==0)
-					count++;
-				
+					count++;				
 			}
 			else if(nums[i]%3==2) {
 				if((nums[i]+1)%3==0)
-					count++;
-				
+					count++;				
 			}
 		}
 		return count;
