@@ -10,10 +10,19 @@ public class MultiplyStrings {
 	}
 
 	static String multiplyStr(String str1, String str2) {
+		
+		//1st approach
 		BigInteger num1 = new BigInteger(str1);
 		BigInteger num2 = new BigInteger(str2);
 		BigInteger res = num1.multiply(num2);
+//		System.out.println(res);
 		
-		return res.toString();
+		//2nd approach
+		Integer v1 = Integer.parseInt(str1);
+		Integer v2 = Integer.parseInt(str2);
+		
+		
+		
+		return Integer.toString(v1*v2);
 	}
 }
