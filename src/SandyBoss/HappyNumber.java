@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class HappyNumber {
 	public static void main(String [] args) {
-		int n = 7;
+		int n = 2;
 		System.out.println(isHappy(n));
 	}
 	public static boolean isHappy(int n) {
@@ -19,9 +19,9 @@ public class HappyNumber {
 	}
 	private static int getNext(int n) {
 		int sum = 0;
-		while(n!=0) {
+		while(n>0) {
 			int digit = n%10;
-			sum = digit*digit;
+			sum += digit*digit;
 			n = n/10;
 		}
 		return sum;
